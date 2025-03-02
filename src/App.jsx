@@ -17,12 +17,16 @@ function App() {
     <>
     <div className="container">
       <h1>Lista films</h1>
+      <div className="">
+        
 
-      <ul>
+      </div>
+
+      <ul className="list-group">
         {
           filteredMovies.map( (movie) => {
             return(
-              <li key={movie }>
+              <li key={movie} className="list-group-item">
                 {movie.title} - {movie.genre}
 
               </li>
