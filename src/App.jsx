@@ -17,6 +17,23 @@ function App() {
     <>
     <div className="container">
       <h1>Lista films</h1>
+
+      <ul>
+        {
+          filteredMovies.map( (movie) => {
+            return(
+              <li key={movie }>
+                {movie.title} - {movie.genre}
+
+              </li>
+            )
+          } )
+        }
+      </ul>
+
+
+
+
     </div>
       
       
