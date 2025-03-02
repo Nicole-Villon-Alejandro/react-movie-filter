@@ -10,10 +10,14 @@ const initialMovies = [
 ];
 
 function App() {
-  const [filteredMovies, setMovies] = useState(initialMovies)
+  const [filteredMovies, setFilteredMovies] = useState(initialMovies);
+  const [genre, setGener ] = useState('');
 
   return (
     <>
+    <div className="container">
+      <h1>Lista films</h1>
+    </div>
       
       
       
